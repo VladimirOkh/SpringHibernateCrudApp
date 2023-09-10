@@ -24,11 +24,9 @@ public class ItemsService {
         return itemsRepository.findByItemName(itemName);
     }
 
-    public List<Person> findByOwner(Person owner) {
+    public List<Item> findByOwner(Person owner) {
         return itemsRepository.findByOwner(owner);
     }
 
-    public void test() {
-        System.out.println("Testing here with debug. Inside Hibernate Transaction");
-    }
+
 }
