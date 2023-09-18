@@ -1,6 +1,7 @@
 package ru.okhremenko.springcourse.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.okhremenko.springcourse.models.Person;
@@ -44,7 +45,4 @@ public class PeopleService {
         peopleRepository.deleteById(id);
     }
 
-    public void test() {
-        System.out.println("Testing here with debug. Inside Hibernate Transaction");
-    }
 }

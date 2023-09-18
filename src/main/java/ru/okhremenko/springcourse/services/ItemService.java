@@ -10,13 +10,11 @@ import ru.okhremenko.springcourse.repositories.ItemsRepository;
 import java.util.List;
 
 @Service
-@Transactional(readOnly = true)
-public class ItemsService {
-
+@Transactional
+public class ItemService {
     private final ItemsRepository itemsRepository;
-
     @Autowired
-    public ItemsService(ItemsRepository itemsRepository){
+    public ItemService(ItemsRepository itemsRepository) {
         this.itemsRepository = itemsRepository;
     }
 
